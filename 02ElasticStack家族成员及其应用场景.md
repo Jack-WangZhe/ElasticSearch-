@@ -2,7 +2,7 @@
 
 ### 一.Elastic Stack生态圈
 
-![](/Users/wangzhe/Practice/ElasticSearch核心入门与实战/ElasticSearch-Notes/图片集/02 Elastic Stack生态圈.png)
+![](./图片集/02 Elastic Stack生态圈.png)
 
 #### 1.Logstash：数据处理管道
 
