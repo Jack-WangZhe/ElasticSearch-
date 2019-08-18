@@ -2,7 +2,7 @@
 
 ### 一.Elastic Stack生态圈
 
-![](/Users/wangzhe/Practice/ElasticSearch核心入门与实战/ElasticSearch-Notes/图片集/02 Elastic Stack生态圈.png)
+![](./图片集/02 Elastic Stack生态圈.png)
 
 #### 1.Logstash：数据处理管道
 
@@ -38,6 +38,30 @@
 * 2017年11月收购Saas厂商Swiftype，提供网站和App搜索
 * 2018年X-Pack开源
 
+#### 5.BEATS
 
+* 轻量的数据采集器
 
-> 未完待续...
+#### 6.X-Pack
+
+* Elastic公司提供的商业化套件
+* 6.3之前的版本，X-Pack以插件方式安装
+* X-Pack开源之后，ElasticSearch & Kibana支持OSS版和Basic两个版本
+  * 部分X-Pack功能支持免费试用，6.8和7.1开始Security功能免费
+* OSS，Basic，黄金级，白金级
+* https://www.elsatic.co/cn/subscriptions
+
+#### 7.ELK（Elastic Stack）客户及应用场景
+
+* 应用场景
+  * 网站搜索、垂直搜索、代码搜索
+  * 日志管理与分析、安全指标监控、应用性能监控、Web抓取舆情分析
+
+#### 8.Elastic Search与数据库的集成
+
+* 单独使用ElasticSearch作为存储（架构简单）
+* 如果需要考虑事务性等内容时，建议将数据库写入或更新到数据库，建立同步机制更新ElasticSeach，到ElasticSearch中进行查询（将数据库与ElasticSearch进行同步）
+* 以下情况可考虑与数据库集成
+  * 与现有系统的集成
+  * 需考虑事务性
+  * 数据更新频繁
